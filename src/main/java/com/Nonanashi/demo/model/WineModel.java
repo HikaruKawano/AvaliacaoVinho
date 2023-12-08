@@ -19,6 +19,7 @@ public class WineModel implements Serializable {
     private UUID idWine;
     private String name;
     private float evaluation;
+    private UserModel userId;
 
     public UUID getIdWine() {
         return idWine;
@@ -30,6 +31,10 @@ public class WineModel implements Serializable {
 
     public float getEvaluation() {
         return evaluation;
+    }
+
+     public UserModel getUserId() {
+        return userId;
     }
 
     public void setIdWine(UUID idWine) {
@@ -44,6 +49,9 @@ public class WineModel implements Serializable {
         this.evaluation = evaluation;
     }
     
-
+   
+    public void setUserId(UserModel userId) {
+        this.userId = userId;
+    }
 
 }
